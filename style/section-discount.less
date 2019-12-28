@@ -1,0 +1,49 @@
+section#Discount{
+	.Discount{
+		&__heder{
+			text-align: center;
+			.color-yellou;
+			padding:100px 0px;
+		}
+		&__title{
+         display: inline-block;
+         width:907px;
+         font-size: 32px;
+		}
+		&-box{
+			margin-top:127px;
+			margin-bottom: 98px;
+			display:flex;
+			justify-content: space-around;
+			flex-wrap:wrap;
+		}
+		&-item{
+			display:flex;
+			flex-direction: column;
+			align-items:flex-start;
+			max-width: 370px;
+			flex-wrap: wrap;
+			margin-bottom:51px;
+		}
+		&__info{
+			text-align: left;
+			font-size: 16px;
+			strong{
+				font-weight: 700;
+			}
+		}
+	}
+}
+
+@media (max-width:1100px) {
+	section#Discount .Discount__title {
+		width: 600px;
+		font-size:25px;
+	}
+}
+@media (max-width:750px) {
+	section#Discount .Discount__title {
+		width: 400px;
+		font-size:18px;
+	}
+}

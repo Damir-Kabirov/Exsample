@@ -1,0 +1,99 @@
+section#aplication{
+	display: block;
+padding-bottom:92px;
+	.aplication-box{
+		display:flex;
+		justify-content:space-between;
+		align-items:center;
+		flex-wrap: wrap;
+	&-img{
+		
+		img{
+			width: 100%;
+			max-width: 555px;
+		}
+	}
+	&-form{
+		padding-top:84px;
+		max-width: 585px;
+		padding-right:90px;
+		box-sizing: border-box;
+		h3{
+			font-size: 24px;
+            font-weight: 400;
+            line-height: 35px;
+            margin-bottom:24px;
+		}
+		p{
+			font-size: 16px;
+            font-weight: 400;
+		}
+		form{
+			margin-top: 30px;
+			.aplication-form-input{
+				display: flex;
+				justify-content:space-between;
+				flex-wrap: wrap;
+				input{
+					padding-left:24px;
+					box-sizing:border-box;
+                    width: 100%;
+                    max-width: 230px;
+                    height: 65px;
+                    border-radius: 10px;
+                    border: 1px solid #dddddd;
+                  
+				}
+				margin-bottom: 30px;
+			}
+			button{
+				padding:27px 101px;
+			}
+		}
+		.aplication-contact-info{
+			margin-top:31px;
+			display: flex;
+			justify-content:space-between;
+			flex-wrap: wrap;
+			&-time{
+				font-size: 15px;
+                font-weight: 400;
+                line-height: 24px;                
+            margin-right: 40px;
+			}
+			&-telephon{
+				font-size: 15px;
+                font-weight: 400;
+                 line-height: 24px;
+				strong{
+					font-size: 15px;
+                    font-weight: 400;
+                    line-height: 24px;
+				}
+			}
+		}
+	}	
+	}
+}
+@media(max-width: 575px){
+	section#aplication .aplication-box-form h3 {
+		font-size:18px;
+	}
+	section#aplication .aplication-box-form {
+		padding-top:53px;
+		padding-right:10px;
+		padding-left:10px;
+	}
+	section#aplication .aplication-box-form form .aplication-form-input input{
+		margin-bottom: 10px;
+		max-width:270px;
+	}
+	section#aplication .aplication-box-form form button {
+		width: 275px;
+		padding: 10px 20px;
+		}
+		section#aplication .aplication-box-form .aplication-contact-info-telephon {
+		margin-bottom: 20px;
+		margin-top: 10px;	
+		}		
+}

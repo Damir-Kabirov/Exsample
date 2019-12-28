@@ -1,0 +1,48 @@
+.navbar_box{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding-top:20px;
+	padding-bottom:20px;	
+}
+.navbar_info{
+	display:flex;
+	align-items:center;
+	&_contact{
+
+		margin-right:30px;
+		span{
+			display: block;
+			margin-bottom:10px;
+		}
+		a{ .color-text;
+     		text-decoration: none;
+			font-size: 20px;
+            font-weight: 400;
+		}
+	}
+	button{
+		
+		&.navbar_button{
+		.color-yellou;
+		padding:18px 30px;
+	}
+	}
+}
+@media (max-width: 767px){
+	.navbar_info{
+		&_contact{
+			display:none;
+		}
+		button.navbar_button{
+			padding:15px 26px;
+		}
+	}
+	.navbar_logo{
+		img{
+			max-width: 91px;
+		}
+	}
+
+}
